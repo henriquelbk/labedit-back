@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { CommentsBusiness } from "../business/CommentBusiness";
+import { CommentsBusiness } from "../business/CommentsBusiness";
 import { ZodError } from "zod";
 import { BaseError } from "../errors/BaseError";
 import { CreateCommentsSchema } from "../dtos/comments/createComment.dto";
@@ -59,7 +59,7 @@ export class CommentsController {
 
   public likeOrDislikeComment = async (req: Request, res: Response) => {
     try {
-      const input = LikeOrDislikeCommentSchema.parse({
+      const input = LikeDislikeCommentSchema.parse({
         like: req.body.like,
         token: req.headers.authorization,
         commentId: req.params.comment_id,

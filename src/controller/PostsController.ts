@@ -55,13 +55,13 @@ export class PostsController {
 
   public likeOrDislikePost = async (req: Request, res: Response) => {
     try {
-      const input = LikeOrDislikePostSchema.parse({
+      const input = LikeDislikePostSchema.parse({
         like: req.body.like,
         token: req.headers.authorization,
         postId: req.params.post_id,
       });
 
-      const output = await this.postsBusiness.likeOrDislikePost(input);
+      const output = await this.postsBusiness.likeDislikePost(input);
       res.status(200).send(output);
     } catch (error) {
       console.log(error);
