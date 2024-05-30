@@ -98,8 +98,8 @@ export class CommentsBusiness {
   };
 
   public likeOrDislikeComment = async (
-    input: LikeOrDislikeCommentInputDTO
-  ): Promise<LikeOrDislikeCommentOutputDTO> => {
+    input: LikeDislikeCommentInputDTO
+  ): Promise<LikeDislikeCommentOutputDTO> => {
     const { token, commentId, like } = input;
 
     const payload = this.tokenManager.getPayload(token);
