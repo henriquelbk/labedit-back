@@ -1,8 +1,8 @@
 import { PostsBusiness } from "../../../src/business/PostsBusiness";
 import { IdGeneratorMock } from "../../mocks/IdGeneratorMock";
 import { TokenManagerMock } from "../../mocks/TokenManagerMock";
-import { PostsDatabaseMock } from "../../mocks/PostsDatabaseMock";
-import { GetPostsSchema } from "../../../src/dtos/posts/getPosts.dto";
+import { PostsDatabaseMock } from "../../mocks/PostDatabaseMock";
+import { GetPostsSchema } from "../../../src/dtos/posts/getPost.dto";
 import { UnauthorizedError } from "../../../src/errors/UnauthorizedError";
 
 describe("Testando get posts", () => {

@@ -1,9 +1,9 @@
 import { PostsBusiness } from "../../../src/business/PostsBusiness";
 import { IdGeneratorMock } from "../../mocks/IdGeneratorMock";
 import { TokenManagerMock } from "../../mocks/TokenManagerMock";
-import { PostsDatabaseMock } from "../../mocks/PostsDatabaseMock";
+import { PostsDatabaseMock } from "../../mocks/PostDatabaseMock";
 import { BadRequestError } from "../../../src/errors/BadRequestError";
-import { CreatePostsSchema } from "../../../src/dtos/posts/createPosts.dto";
+import { CreatePostsSchema } from "../../../src/dtos/posts/createPost.dto";
 
 describe("Testando create post", () => {
   const postsBusiness = new PostsBusiness(
