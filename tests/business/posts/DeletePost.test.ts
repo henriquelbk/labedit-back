@@ -1,11 +1,11 @@
 import { PostsBusiness } from "../../../src/business/PostsBusiness";
 import { IdGeneratorMock } from "../../mocks/IdGeneratorMock";
 import { TokenManagerMock } from "../../mocks/TokenManagerMock";
-import { PostsDatabaseMock } from "../../mocks/PostsDatabaseMock";
-import { EditPostsSchema } from "../../../src/dtos/posts/editPosts.dto";
+import { PostsDatabaseMock } from "../../mocks/PostDatabaseMock";
+import { EditPostsSchema } from "../../../src/dtos/posts/editPost.dto";
 import { ForbiddenError } from "../../../src/errors/ForbiddenError";
 import { NotFoundError } from "../../../src/errors/NotFoundError";
-import { DeletePostsSchema } from "../../../src/dtos/posts/deletePosts.dto";
+import { DeletePostsSchema } from "../../../src/dtos/posts/deletePost.dto";
 
 describe("Testando delete post", () => {
   const postsBusiness = new PostsBusiness(

@@ -1,10 +1,10 @@
 import { IdGeneratorMock } from "../../mocks/IdGeneratorMock";
 import { TokenManagerMock } from "../../mocks/TokenManagerMock";
-import { PostsDatabaseMock } from "../../mocks/PostsDatabaseMock";
+import { PostsDatabaseMock } from "../../mocks/PostDatabaseMock"
 import { BadRequestError } from "../../../src/errors/BadRequestError";
-import { CommentsDatabaseMock } from "../../mocks/CommentsDatabaseMock";
+import { CommentsDatabaseMock } from "../../mocks/CommentDatabaseMock";
 import { CommentsBusiness } from "../../../src/business/CommentsBusiness";
-import { GetCommentsSchema } from "../../../src/dtos/comments/getComments.dto";
+import { GetCommentsSchema } from "../../../src/dtos/comments/getComment.dto";
 
 describe("Testando get comments", () => {
   const commentsBusiness = new CommentsBusiness(
