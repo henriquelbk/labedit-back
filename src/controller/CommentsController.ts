@@ -65,7 +65,7 @@ export class CommentsController {
         commentId: req.params.comment_id,
       });
 
-      const output = await this.commentsBusiness.likeOrDislikeComment(input);
+      const output = await this.commentsBusiness.likeDislikeComment(input);
       res.status(200).send(output);
     } catch (error) {
       console.log(error);
