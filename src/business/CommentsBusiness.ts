@@ -97,7 +97,7 @@ export class CommentsBusiness {
     return response;
   };
 
-  public likeOrDislikeComment = async (
+  public likeDislikeComment = async (
     input: LikeDislikeCommentInputDTO
   ): Promise<LikeDislikeCommentOutputDTO> => {
     const { token, commentId, like } = input;
