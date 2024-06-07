@@ -57,7 +57,7 @@ export class CommentsController {
     }
   };
 
-  public likeOrDislikeComment = async (req: Request, res: Response) => {
+  public likeDislikeComment = async (req: Request, res: Response) => {
     try {
       const input = LikeDislikeCommentSchema.parse({
         like: req.body.like,

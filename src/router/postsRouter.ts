@@ -35,5 +35,5 @@ postsRouter.put("/:post_id/like", postsController.likeOrDislikePost);
 
 postsRouter.put(
   "/:post_id/comments/:comment_id/like",
-  commentsController.likeOrDislikeComment
+  commentsController.likeDislikeComment
 );
